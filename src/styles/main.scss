@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/concert-3387324_1920.jpg);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 10000px 0 0 #0000006e; 
+
+    @media(max-width:768px) {
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    
+    h1 {
+        font-size: 54px;
+    }
+
+    #cont{
+
+        font-size: 48px;
+
+        @media(max-width:768px) {
+            font-size: 36px;
+        }
+        
+    }
+    
+    &__container {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10vh;
+        padding: 0 54px;
+        
+
+        @media(max-width:768px) {
+
+            gap: 2vh;
+            
+            h1 {
+
+                font-size: 24px;
+            }
+        }
+
+        &__infos {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            @media(max-width:768px) {
+                display: block;
+            }
+        }
+
+        button {
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            width: 154px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background: linear-gradient(90deg, #1cb5e0da 0%, #000851d0 100%);
+            }
+
+            @media(max-width: 768px){
+                height: 5vh;
+            }
+
+        }
+          
+    }
+
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+
+        @media(max-width: 768px) {
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+    }
+}
+
+.sections {
+    padding: 5.6vw;
+    background: linear-gradient(180deg, black, blue);
+    display: flex;
+    gap: 7vw;
+    box-shadow: inset 10000px 0 0 #000000a0; 
+
+    @media(max-width:768px) {
+        display: block;
+        text-align: center;
+        font-size: small;
+    }
+    
+    img {
+        width: 30%;
+        border-radius: 8px;
+
+        @media(max-width:768px) {
+            width: 100%;
+            margin-top: 36px;
+        }
+    }
+
+    &--rev{
+
+        flex-direction: row-reverse;
+        background: linear-gradient(180deg, blue, black);
+
+    }
+
+    &__infos {
+
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        
+        
+        
+    }
+}
